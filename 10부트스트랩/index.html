@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 css적용 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- 제이쿼리 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- 부트스트랩 js 적용 -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- 커스텀할 디자인을 넣어서 사용 -->
+</head>
+
+<body>
+
+    <h3>버튼모음</h3>
+
+    <button type="button" class="btn btn-primary btn-lg">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Menu 1</a></li>
+        <li><a href="#">Menu 2</a></li>
+        <li><a href="#">Menu 3</a></li>
+    </ul>
+
+    <!-- 정렬 단축키는 컨트롤 k f -->
+    <div class="form-group">
+        <label for="usr">Name:</label>
+        <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd">
+    </div>
+
+    <!-- 그리드 (반응형 영역) -->
+    <!-- 
+        .container or .container-fluid아래에
+        .row를 넣어줍니다.
+        .col-xx-xx 클래스를 넣어서 영역을 잡습니다.
+     -->
+    <div class="container">
+        <!-- 브라우저 크기 4칸, 모바일 환경 2칸 -->
+        <div class="row를">
+            <div class="col-sm-3 col-xs-6">1</div>
+            <div class="col-sm-3 col-xs-6">2</div>
+            <div class="col-sm-3 col-xs-6">3</div>
+            <div class="col-sm-3 col-xs-6">4</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- 전체화면을 다 사용함 -->
+    <div class="container-fluid">
+        <div class="row를">
+            <div class="col-sm-3 col-xs-6">1</div>
+            <div class="col-sm-3 col-xs-6">2</div>
+            <div class="col-sm-3 col-xs-6">3</div>
+            <div class="col-sm-3 col-xs-6">4</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <!-- 모바일에서 2칸, 테블릿 3칸, 웹환경에서 6칸 -->
+        <ul class="row">
+            <li class="col-md-2 col-sm-4 col=xs-6">1</li>
+            <li class="col-md-2 col-sm-4 col=xs-6">2</li>
+            <li class="col-md-2 col-sm-4 col=xs-6">3</li>
+            <li class="col-md-2 col-sm-4 col=xs-6">4</li>
+            <li class="col-md-2 col-sm-4 col=xs-6">5</li>
+            <li class="col-md-2 col-sm-4 col=xs-6">6</li>
+            <li class="col-md-2 col-sm-4 col=xs-6">7</li>
+            <li class="col-md-2 col-sm-4 col=xs-6">8</li>
+            <li class="col-md-2 col-sm-4 col=xs-6">9</li>
+            <li class="col-md-2 col-sm-4 col=xs-6">10</li>
+            <li class="col-md-2 col-sm-4 col=xs-6">11</li>
+            <li class="col-md-2 col-sm-4 col=xs-6">12</li>
+        </ul>
+    </div>
+
+    <hr>
+
+
+    <!-- 모바일에서 1칸, 테블릿에서 4칸, 웹환경에서 6칸 -->
+    <div class="container">
+        <ul class="row">
+            <li class="col-xs-12 col-sm-3 col-md-2">12</li>
+            <li class="col-xs-12 col-sm-3 col-md-2">11</li>
+            <li class="col-xs-12 col-sm-3 col-md-2">10</li>
+            <li class="col-xs-12 col-sm-3 col-md-2">9</li>
+            <li class="col-xs-12 col-sm-3 col-md-2">8</li>
+            <li class="col-xs-12 col-sm-3 col-md-2">7</li>
+            <li class="col-xs-12 col-sm-3 col-md-2">6</li>
+            <li class="col-xs-12 col-sm-3 col-md-2">5</li>
+            <li class="col-xs-12 col-sm-3 col-md-2">4</li>
+            <li class="col-xs-12 col-sm-3 col-md-2">3</li>
+            <li class="col-xs-12 col-sm-3 col-md-2">2</li>
+            <li class="col-xs-12 col-sm-3 col-md-2">1</li>
+        </ul>
+    </div>
+
+    <h3>모달창</h3>
+
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

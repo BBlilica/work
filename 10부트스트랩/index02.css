@@ -1,0 +1,174 @@
+.navbar-inverse {
+    background-color: #263238;
+    border-color: #263238;
+}
+
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    padding: 10px 20px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+    background-color: #4e6b79;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+/* 헤더 디자인 */
+
+/* 
+    디자인을 커스터마이징 할때
+    1동일클래스명을 선언하고, 속성을 지칭
+*/
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.form-control:focus {
+    border-color: #e3e3e3;
+    outline: 0;
+    /* -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6); */
+    /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6); */
+}
+
+/* 슬라이드영역 */
+
+.main-article {
+    margin-top: 50px;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+
+
+
+/* 본문 영역 */
+.main-section {margin-top: 50px;}
+
+.prod-list {
+    border: 1px solid #777;
+    padding: 1px;
+}
+
+.prod-list>li [class*=col-] {
+    /* col-이 포함된 li태그 */
+    padding: 5px;
+}
+
+.prod-list .prod-link {
+    border: 1px solid #777;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.prod-list .prod-link>.arrow {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: #e3e3e3;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.prod-list .prod-link>.hover {
+    background-color: #50a0ff;
+    opacity: 0;
+    /* 0 설정시 안보임 */
+}
+
+.prod-link:hover>.hover {
+    opacity: 1;
+}
+
+.prod-link:hover {
+    border: 1px solid #50a0ff;
+}
+
+/*  */
+
+.bon {
+    padding: 80px;
+}
+
+
+    
+/* .bon .box .box-in .left {float: left; font-size: 10px;} */
+/* .bon .box .box-in .right {float: right; font-size: 14px;} *//* 상품리스트 */
+
+.prod-content {
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.prod-content > .info {float: left;}
+.prod-content > .price {float: right;}
+
+.prod-color {opacity: 0; margin-top: -35px; transition: all 0.5s ease-in-out}
+.prod-color > ul {overflow: hidden;}
+.prod-color > ul > li {float: left; width: 60px;}
+
+.prod-list-inner:hover > .prod-color {opacity: 1;}
+
+/* section .container .row .flo {display: block; overflow: hidden; padding: 30px; width: 100%;}
+section .container .row .flo .l-left {display: inline-block; float: left;}
+section .container .row .flo .r-right {display: inline-block; float: right;}
+section .container .row .flo .order {overflow: hidden;}
+
+section .container .row .flo .order .L-button {display: block; float: left;}
+section .container .row .flo .order .R-button {display: block; float: right;}
+
+section .container .row .flo .order .L-button, section .container .row .flo .order .R-button {width: 50%; height: 60px;} */
+
+
+
+
+/* 상품상세 */
+.detail-box {min-height: 350px;/* 350이하로는 줄지 않고, 내용이 많으면 가변합니다. */}
+.detail-box > .title {
+    font-size: 25px;
+}
+
+.detail-box > .price {
+    font-size: 28px;
+    font-weight: 600;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 8px 0;
+}
+
+.detail-box > .delivery {
+    color:#777
+}
+
+.detail-control {margin-top: 20px;}
+.detail-control > .price {overflow: hidden;}
+.detail-control > .price > .left {float: left; font-size: 18px; line-height: 50px;}
+.detail-control > .price > .right {float: right; font-size: 25px; font-weight: 600;}
+.detail-contoll > .order {overflow: hidden;}
+.detail-control > .order > .left {float: left; width: 50%; border: 1px solid #e3e3e3; background-color: #fff; padding: 10px 0;}
+.detail-control > .order > .right {float: right; width: 50%; border: 1px solid #e3e3e3; background-color: #2b6ad0; padding: 10px 0; }

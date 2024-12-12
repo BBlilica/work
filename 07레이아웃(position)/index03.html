@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0;}
+        ul,li {list-style: none;}
+
+        header {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            background-color: #fff;
+            z-index: 5px;
+        }
+
+        .logo {text-align: center;}
+        .menu {text-align: center; background-color: aqua;}
+        .menu > ul > li {display: inline-block;}
+
+        section {
+            height: 2000px;
+            background-color: yellow;
+            margin-top: 121px; /* 헤더의 높이만큼 컨텐츠 내역의 여백을 밀어줍니다. */
+        }
+
+
+        .aside {
+            position: fixed;
+            background-color: green;
+            bottom: 10px;
+            right: 10px;
+            z-index: 10px;
+            color: aqua;
+        }
+
+        .bob {
+                text-align: center;
+                display: inline-block;
+                text-decoration: none;
+                color: aquamarine;
+            }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="/06레이아웃(float)/img/bgimg.png" alt="물고기">
+        </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">메뉴</a></li>
+                    <li><a href="#">메뉴</a></li>
+                    <li><a href="#">메뉴</a></li>
+                    <li><a href="#">메뉴</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <aside class="aside">
+        <a href="index03.html">TOP</a>
+    </aside>
+
+    <section>
+        컨텐츠영역...
+    </section>
+
+
+    <ul class="bob">
+        <li>dkwomf</li>
+        <li>dkwomf</li>
+        <li>dkwomf</li>
+        <li>dkwomf</li>
+        <li>dkwomf</li>
+    </ul>
+ 
+
+        <video controls="controls"></video>
+</body>
+</html>

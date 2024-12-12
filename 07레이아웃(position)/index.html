@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+    <style>
+        *{padding: 0; margin: 0;}
+        .list {
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid #777;
+            position:relative;
+        }
+        p {height: 50px;}
+        .innel1 {background-color: aqua;}
+
+        .innel2 {
+            background-color: yellow;
+            position: absolute; /* 부모에 relative가 있는 태그 기준으로 움직이게 됩니다. 없으면 body 기준으로 움직임 */
+
+            /*
+             1. left / right 중 1개, top / bottom 중에 1개를 이용해서 위치를 조정합니다.
+            2. 기준이 될 부모에게 relative를 넣으면 됩니다.
+             */
+            left: 100px;
+            top: 0px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .innel3 {background-color: green;}
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="list">
+        <div class="content">
+            <p class="innel1">
+                포지션
+            </p>
+            <p class="innel2">
+                포지션
+            </p>
+            <p class="innel3">
+                포지션
+            </p>
+        </div>
+    </div>
+
+
+</body>
+</html>
